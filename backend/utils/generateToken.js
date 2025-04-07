@@ -10,7 +10,7 @@ const generateToken = (userId, res) => {
         httpOnly : true, //xss attacks
         sameSite : "strict", //CSRF attacks
         secure : process.env.NODE_ENV !== "development"
-    })
+    }) 
 }
 
 export default generateToken;
